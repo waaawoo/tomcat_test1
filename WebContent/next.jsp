@@ -4,22 +4,20 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>ログイン画面</title>
+<title>Insert title here</title>
 </head>
 <body>
-	<h1>ログイン画面</h1>
+<h1>次の画面</h1>
 	<%
 		String id = (String)session.getAttribute("id");
 		String pass = (String)session.getAttribute("pass");
 		String ste = (String)request.getAttribute("ste");
 		if (id == null){
-			id = "";
-			pass = "";
+			ste = "すでにログアウトしています。";
 		}
 	%>
 	<%= "idは" + id  %>
 	<%= "passは" + pass  %>
-	<a href="next.jsp">次のページ</a>
-	
+	<a href="logout.jsp">ログアウト</a>
 </body>
 </html>
