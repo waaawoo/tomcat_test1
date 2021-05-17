@@ -17,5 +17,13 @@
 	パスワード:<input type="text" name="pass"><br>
 	<input type="submit" value="送信">
 	</form>
+	
+	<p>ログイン情報を入力してください</p>
+	<form action="/tomcat_test/login" method="POST" >
+		ID <input type="text" name="id">
+		pass <input type="password" name="pass">
+		<input type="submit" value="ログイン">
+		
+	</form>
 </body>
 </html>
