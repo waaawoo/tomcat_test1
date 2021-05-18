@@ -8,6 +8,10 @@
 </head>
 <body>
 	<h1>ログイン画面</h1>
+	<% 
+		String state = (String)request.getAttribute("state");
+		if (state == null){
+	%>
 	<%
 		String id = (String)session.getAttribute("id");
 		String pass = (String)session.getAttribute("pass");
@@ -20,6 +24,8 @@
 	<%= "idは" + id  %>
 	<%= "passは" + pass  %>
 	<a href="next.jsp">次のページ</a>
-	
+	<% }else{ %>
+		<%= state %>
+	<%} %>
 </body>
 </html>

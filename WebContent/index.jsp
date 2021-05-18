@@ -23,7 +23,10 @@
 		ID <input type="text" name="id">
 		pass <input type="password" name="pass">
 		<input type="submit" value="ログイン">
-		
+	</form>
+	
+	<form action="/tomcat_test/db" method="POST">
+		<input type="submit" value="DB検索">
 	</form>
 </body>
 </html>
