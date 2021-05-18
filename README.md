@@ -42,3 +42,14 @@ maxWaitMillisは接続タイム何秒かを設定
 show status like 'Threads_connected';  
 上記でコネクション数を確認できる  
 接続が2になっていればコレクションプールを使用できている 
+
+## MVCモデル
+V view(jsp    
+検索や登録のボタンなど見た目の部分
+
+C controller(servlet  
+入力されたボタンによって動作を振り分ける  
+
+M model(Beans  
+MODELでDBへの接続、登録、削除の機能の実装
+

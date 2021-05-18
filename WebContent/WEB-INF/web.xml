@@ -18,6 +18,11 @@ version="2.4">
 	<servlet-class>db.SearchServlet</servlet-class>
 </servlet>
 
+<servlet>
+	<servlet-name>Edit</servlet-name>
+	<servlet-class>db.EditServlet</servlet-class>
+</servlet>
+
 <servlet-mapping>
 	<servlet-name>hello</servlet-name>
 	<url-pattern>/hello</url-pattern>
@@ -31,6 +36,11 @@ version="2.4">
 <servlet-mapping>
 	<servlet-name>DB</servlet-name>
 	<url-pattern>/db</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>Edit</servlet-name>
+	<url-pattern>/Edit</url-pattern>
 </servlet-mapping>
 
 </web-app>
